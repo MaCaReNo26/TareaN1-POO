@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //ejercicio 1 como actualizacion
         System.out.println("------------- ||| EJERCICIO 1 |||-------------");
         int cantidad;
         float precio, total;
