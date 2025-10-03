@@ -67,5 +67,39 @@ public class Main {
         } else {
             System.out.println("Usted no cumple con los requisitos :C");
         }
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1. If");
+        System.out.println("2. while");
+        System.out.println("3. for");
+        System.out.println("Ingrese la opcion: ");
+        int op = sc.nextInt();
+        switch (op) {
+            case 1:
+                String usuario = "Alex";
+                String clave = "1234";
+                System.out.println("Ingrese su usuario: ");
+                String a = sc.next();
+                System.out.println("Ingrese su contraseña: ");
+                String b = sc.next();
+
+                if(usuario.equals(a) && clave.equals(b) ){
+                    System.out.println("Acceso correcto");
+                }else{
+                    System.out.println("Usuario o contraseña incorrectos");
+                }
+            case 2:
+                String contra1 = "alex123", contra = "";
+                while(!(contra1.equals(contra))){
+                    System.out.println("Ingrese su contraseña: ");
+                    contra = sc.nextLine();
+                }
+            case 3:
+                System.out.println("Ingrese la tabla de multiplicar que necesita: ");
+                int num = sc.nextInt();
+                for (int i = 0; i < 10; i++) {
+                    System.out.println((i+1)+" * "+num+" = "+(i+1)*num);
+                }
+        }
     }
 }
